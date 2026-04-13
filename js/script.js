@@ -206,6 +206,53 @@ document.addEventListener("DOMContentLoaded", () => {
   const leadForm = document.getElementById("leadForm");
   const formNext = document.getElementById("formNext");
   const formSuccess = document.getElementById("formSuccess");
+  const requestIdInput = document.getElementById("requestId");
+  const leadHoney = document.getElementById("leadHoney");
+  const FORM_SENT_KEY = "gym24_form_sent";
+
+  const showFormMessage = (message) => {
+    if (!formSuccess) {
+      return;
+    }
+    formSuccess.textContent = message;
+    formSuccess.hidden = false;
+  };
+
+  const markFormSent = () => {
+    try {
+      localStorage.setItem(FORM_SENT_KEY, "1");
+    } catch (error) {
+      // Ignore storage failures and continue form flow.
+    }
+  };
+
+  const isFormAlreadySent = () => {
+    try {
+      return localStorage.getItem(FORM_SENT_KEY) === "1";
+    } catch (error) {
+      return false;
+    }
+  };
+
+  const disableSubmitButton = () => {
+    if (!leadForm) {
+      return;
+    }
+    const submitButton = leadForm.querySelector(".form-submit");
+    if (submitButton) {
+      submitButton.setAttribute("disabled", "true");
+      submitButton.textContent = "Enviado";
+    }
+  };
+
+  const assignRequestId = () => {
+    if (!requestIdInput || requestIdInput.value) {
+      return;
+    }
+    const stamp = Date.now().toString(36).toUpperCase();
+    const random = Math.random().toString(36).slice(2, 8).toUpperCase();
+    requestIdInput.value = `GYM24-${stamp}-${random}`;
+  };
 
   if (formNext) {
     const returnUrl = `${window.location.origin}${window.location.pathname}?sent=1#contacto`;
@@ -214,11 +261,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const params = new URLSearchParams(window.location.search);
   if (formSuccess && params.get("sent") === "1") {
-    formSuccess.hidden = false;
+    markFormSent();
+    showFormMessage("Gracias. Tu solicitud se envio correctamente.");
+    disableSubmitButton();
   }
 
   if (leadForm) {
-    leadForm.addEventListener("submit", () => {
+    assignRequestId();
+
+    if (isFormAlreadySent()) {
+      showFormMessage("Ya hemos recibido una solicitud desde este dispositivo.");
+      disableSubmitButton();
+    }
+
+    leadForm.addEventListener("submit", (event) => {
+      if (leadHoney && leadHoney.value.trim() !== "") {
+        event.preventDefault();
+        return;
+      }
+
+      if (isFormAlreadySent()) {
+        event.preventDefault();
+        showFormMessage("Ya hemos recibido una solicitud desde este dispositivo.");
+        return;
+      }
+
+      assignRequestId();
+      markFormSent();
+
       const submitButton = leadForm.querySelector(".form-submit");
       if (submitButton) {
         submitButton.setAttribute("disabled", "true");
