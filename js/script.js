@@ -387,3 +387,15 @@ document.addEventListener("DOMContentLoaded", () => {
   init();
 })();
 
+document.addEventListener('DOMContentLoaded', function () {
+  const leadForm = document.getElementById('leadForm');
+
+  if (leadForm) {
+    leadForm.addEventListener('submit', function () {
+      gtag('event', 'generate_lead', {
+        event_category: 'form',
+        event_label: 'Solicitar información'
+      });
+    });
+  }
+});
