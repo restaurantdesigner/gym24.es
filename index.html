@@ -1,0 +1,872 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>gym24.es | Franquicia de gimnasios 24/7</title>
+  <meta
+    name="description"
+    content="Franquicia de gimnasios inteligentes 24/7. Desarrollo, equipamiento y automatizaci&oacute;n."
+  />
+
+  <link rel="icon" type="image/png" href="img/fv.png" />
+  <link rel="apple-touch-icon" href="img/fv.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="hero-video-bg" aria-hidden="true">
+  <video
+    class="hero-video hero-video--mobile"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    poster="img/hero-poster.jpg"
+  >
+    <source src="img/video/heromb.mp4" type="video/mp4" />
+  </video>
+
+  <video
+    class="hero-video hero-video--desktop"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    poster="img/hero-poster.jpg"
+  >
+    <source src="img/video/hero.mp4" type="video/mp4" />
+  </video>
+
+  <div class="hero-video-overlay"></div>
+  <div class="hero-video-vignette"></div>
+</div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+
+      <!-- LOGO -->
+      <a href="#" class="site-logo" aria-label="gym24.es">
+        <span class="site-logo__text">GYM24.ES</span>
+        <img src="img/lg1.png" alt="gym24.es" />
+      </a>
+
+      <!-- NAV (desktop) -->
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#modelo"   class="site-nav__link">Modelo</a>
+        <a href="#proceso"  class="site-nav__link">Proceso</a>
+        <a href="#comunidad" class="site-nav__link">Comunidad</a>
+        <a href="#seguridad" class="site-nav__link">Seguridad</a>
+        <a href="#contacto" class="site-nav__link">Contacto</a>
+      </nav>
+
+      <!-- CTA + BURGER -->
+      <div class="site-header__right">
+        <a href="#contacto" class="header-cta">Solicitar información</a>
+        <button class="burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Menú móvil" aria-hidden="true">
+      <a href="#modelo"    class="mobile-menu__link">Modelo</a>
+      <a href="#proceso"   class="mobile-menu__link">Proceso</a>
+      <a href="#comunidad" class="mobile-menu__link">Comunidad</a>
+      <a href="#seguridad" class="mobile-menu__link">Seguridad</a>
+      <a href="#contacto"  class="mobile-menu__link">Contacto</a>
+      <a href="#contacto"  class="mobile-menu__cta">Solicitar información</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero__inner">
+      <h1 class="hero__title">
+        &iexcl;Abre tu<br />
+        gimnasio<br />
+        inteligente con<br />
+        nosotros!
+      </h1>
+
+      <div class="hero__actions">
+        <a href="tel:+34666400350" class="btn btn--primary">
+          <span class="btn__label">Comienza ahora</span>
+          <span class="btn__icon" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- SECOND SPACER (REVIEWS) -->
+<div class="spacer spacer-reviews" id="reviews">
+  <div class="spacer-inner">
+    <!-- <h2 class="reviews-title human">Lo que opinan sobre gym24.es</h2> -->
+
+    <div class="reviews-marquee" aria-label="Reviews">
+      <div class="reviews-track">
+
+        <!-- ===== SET 1 (c1-c10) ===== -->
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f2.png" alt="Laura G." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Javier M.</div>
+              <div class="review-role">Propietaria de local · Madrid</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Teníamos un local parado y nos presentaron una propuesta clara para transformarlo en un gimnasio 24/7. Lo mejor fue la claridad del planteamiento y la sensación de proyecto real."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f1.png" alt="Javier M." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Sofia R.</div>
+              <div class="review-role">Inversor · Valencia</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Buscábamos un modelo de negocio entendible y escalable. Con gym24.es vimos una estructura clara de inversión, equipamiento y control de accesos desde el primer contacto."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f3.png" alt="Sofia R." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Diego P.</div>
+              <div class="review-role">Proyecto fitness · Sevilla</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos ayudaron a entender qué tipo de centro podíamos montar según los metros disponibles. La propuesta fue seria, concreta y bien adaptada a la realidad del local."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f4.png" alt="Diego P." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Marta L.</div>
+              <div class="review-role">Emprendedor · Zaragoza</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Lo que más valoré fue que explicaran bien qué entra en la inversión inicial y qué partes dependen del local. Esa transparencia genera mucha confianza."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f5.png" alt="Marta L." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Andres V.</div>
+              <div class="review-role">Inversora · Málaga</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos interesaba una fórmula con menos dependencia operativa y el modelo 24/7 encajó perfectamente. La propuesta transmite orden, rentabilidad potencial y visión comercial."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f6.png" alt="Andres V." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Paula C.</div>
+              <div class="review-role">Propietario · Bilbao</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos gustó que no ofrecieran una solución genérica. Ajustaron el enfoque según la superficie, la distribución y el tipo de cliente que queríamos atraer al centro."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f7.png" alt="Paula C." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Sergio T.</div>
+              <div class="review-role">Proyecto deportivo · Alicante</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"La combinación de cardio, fuerza, peso libre y acceso automatizado nos permitió visualizar un gimnasio moderno y funcional sin perder control del presupuesto."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f8.png" alt="Sergio T." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Elena N.</div>
+              <div class="review-role">Inversor · Murcia</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos explicaron de forma muy clara la proyección comercial del modelo. Eso nos ayudó a entender mejor el potencial del negocio y el horizonte de desarrollo."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f9.png" alt="Elena N." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Raul F.</div>
+              <div class="review-role">Propietaria · Vigo</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Teníamos dudas sobre la dimensión del proyecto y el número de máquinas. Nos ayudaron a ordenar la idea y convertirla en una propuesta mucho más profesional."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f10.png" alt="Raul F." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Lucia B.</div>
+              <div class="review-role">Inversor · Granada</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos dio tranquilidad ver una propuesta pensada para funcionar de verdad: equipamiento, accesos, lógica operativa y una lectura comercial fácil de entender."</p>
+        </article>
+
+        <!-- ===== SET 2 (c11-c20) ===== -->
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f11.png" alt="Lucia B." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Carlos H.</div>
+              <div class="review-role">Proyecto local · Palma</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos ayudaron a enfocar el centro como una inversión seria y no solo como un gimnasio más. Esa visión cambia totalmente la forma de plantear el proyecto."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f12.png" alt="Carlos H." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Irene D.</div>
+              <div class="review-role">Emprendedor · Córdoba</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Lo más útil fue recibir una base económica clara sobre la que trabajar. A partir de ahí fue mucho más fácil estudiar metros, distribución y nivel de equipamiento."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f13.png" alt="Irene D." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Mateo J.</div>
+              <div class="review-role">Propietaria · Gijón</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos gustó que el proyecto pudiera adaptarse a distintos tamaños de local. No sentí una propuesta rígida, sino una solución pensada para nuestro caso."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f14.png" alt="Mateo J." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Alba S.</div>
+              <div class="review-role">Inversor · Valladolid</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"El sistema 24/7 fue uno de los puntos que más nos atrajo. La idea de una operativa más automatizada encaja muy bien con el mercado actual."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f15.png" alt="Alba S." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Hector Q.</div>
+              <div class="review-role">Proyecto fitness · Salamanca</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"La propuesta nos permitió visualizar una apertura realista, con una inversión ajustada y con margen para escalar el centro según la demanda."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f16.png" alt="Hector Q." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Nuria A.</div>
+              <div class="review-role">Emprendedor · Almería</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos presentaron un enfoque práctico para arrancar con una base sólida y luego crecer. Esa lógica escalable fue clave para tomar la decisión."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f17.png" alt="Nuria A." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Julian E.</div>
+              <div class="review-role">Inversora · León</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos convenció la mezcla entre visión comercial y planteamiento técnico. Se nota que entienden tanto la operación del centro como la parte económica."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f18.png" alt="Julian E." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Patricia P.</div>
+              <div class="review-role">Propietario · Burgos</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Nos ayudaron a convertir una idea bastante general en un concepto concreto de gimnasio 24/7. Eso ahorra tiempo, errores y muchas dudas iniciales."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f19.png" alt="Patricia P." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Tomas C.</div>
+              <div class="review-role">Proyecto deportivo · Logroño</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"La propuesta transmite equilibrio: una inversión razonable, un modelo actual y una estructura suficientemente flexible para crecer paso a paso."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-head">
+            <img class="avatar" src="img/ava/f20.png" alt="Tomas C." loading="lazy">
+            <div class="review-meta">
+              <div class="review-name">Laura G.</div>
+              <div class="review-role">Inversor · Santander</div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="review-text">"Lo que más nos gustó fue que la propuesta no se quedaba en lo visual. Había lógica económica, estructura operativa y una idea clara de cómo lanzar el centro."</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section section-features" id="modelo">
+  <div class="features-video-bg" aria-hidden="true">
+    <video
+      class="features-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    >
+      <source src="img/video/sec2.mp4" type="video/mp4" />
+    </video>
+    <div class="features-video-overlay"></div>
+  </div>
+
+  <div class="container features__inner">
+
+    <div class="features__top">
+
+      <div class="features__left">
+        <p class="features__kicker">
+          MODELO DE GIMNASIO 24/7
+        </p>
+
+        <h2 class="features__title">
+          Todo lo que necesitas<br>
+          para lanzar un gimnasio rentable.
+        </h2>
+      </div>
+
+      <div class="features__right">
+        <p class="features__desc">
+          Un modelo optimizado con equipamiento moderno, inversion controlada y sistema de acceso automatizado para operar todos los dias del ano.
+        </p>
+
+        <a href="#contacto" class="features__cta">
+          Solicitar informacion &rarr;
+        </a>
+      </div>
+
+    </div>
+
+    <div class="features__grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">MOD</div>
+        <div class="feature-title">MODERNO</div>
+        <div class="feature-text">
+          Equipamiento actual y diseno pensado para un uso eficiente del espacio.
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">INV</div>
+        <div class="feature-title">INVERSION CONTROLADA</div>
+        <div class="feature-text">
+          Modelo adaptable desde una base optimizada segun metros y nivel del centro.
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">24/7</div>
+        <div class="feature-title">24/7</div>
+        <div class="feature-text">
+          Funcionamiento continuo con control de accesos automatizado.
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">ESC</div>
+        <div class="feature-title">ESCALABLE</div>
+        <div class="feature-text">
+          Adaptacion completa segun superficie, ubicacion y capacidad de socios.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="spacer spacer-investment">
+  <div class="spacer-bg"></div>
+
+  <div class="spacer-content">
+    <p class="spacer-small">
+      MODELO DE NEGOCIO 24/7
+    </p>
+
+    <h2 class="spacer-title">
+      No es solo un gimnasio.<br>
+      Es un sistema de ingresos recurrentes.
+    </h2>
+
+    <p class="spacer-text">
+      Cuotas mensuales, acceso automatizado y una estructura optimizada para generar ingresos estables con menor dependencia operativa.
+    </p>
+  </div>
+</section>
+
+<section class="section section-steps" id="proceso">
+  <div class="container steps">
+
+    <div class="steps__intro">
+      <p class="steps__eyebrow">4 PASOS. 100% CONTROL.</p>
+      <h2 class="steps__title">ASI DE FACIL FUNCIONA</h2>
+      <p class="steps__subtitle">
+        Desde el estudio del local hasta la apertura: un proceso claro,
+        directo y adaptado a tu proyecto.
+      </p>
+    </div>
+
+    <div class="steps__list">
+
+      <article class="step-item">
+        <div class="step-item__number">01</div>
+        <div class="step-item__content">
+          <h3 class="step-item__title">Estudiamos tu local</h3>
+          <p class="step-item__text">
+            Analizamos metros, distribucion, accesos y potencial comercial
+            para definir la base del proyecto.
+          </p>
+        </div>
+      </article>
+
+      <article class="step-item">
+        <div class="step-item__number">02</div>
+        <div class="step-item__content">
+          <h3 class="step-item__title">Disenamos la propuesta</h3>
+          <p class="step-item__text">
+            Preparamos una solucion adaptada con equipamiento, zona de cardio,
+            fuerza y sistema de acceso 24/7.
+          </p>
+        </div>
+      </article>
+
+      <article class="step-item">
+        <div class="step-item__number">03</div>
+        <div class="step-item__content">
+          <h3 class="step-item__title">Ajustamos la inversion</h3>
+          <p class="step-item__text">
+            Definimos la propuesta economica segun superficie, nivel de
+            equipamiento y capacidad objetivo del centro.
+          </p>
+        </div>
+      </article>
+
+      <article class="step-item">
+        <div class="step-item__number">04</div>
+        <div class="step-item__content">
+          <h3 class="step-item__title">Lanzas tu gimnasio 24/7</h3>
+          <p class="step-item__text">
+            Con una estructura clara, acceso automatizado y una base preparada
+            para crecer desde el primer dia.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-panorama" id="panorama">
+  <div class="container panorama">
+
+    <div class="panorama__intro">
+      <p class="panorama__eyebrow">RECORRIDO VIRTUAL</p>
+      <h2 class="panorama__title">Explora la panor&aacute;mica del gimnasio</h2>
+      <p class="panorama__subtitle">
+        Visualiza el espacio, la distribuci&oacute;n y el ambiente de un gimnasio 24/7.
+      </p>
+    </div>
+
+    <div class="panorama__frame">
+      <iframe
+        src="https://app.seekbeak.com/v/ogzw953oqE9"
+        title="Panor&aacute;mica interactiva del gimnasio"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<section class="spacer spacer-divider" aria-hidden="true">
+  <div class="spacer-divider__line"></div>
+</section>
+
+<section class="section section-community" id="comunidad">
+  <div class="container community">
+
+    <!-- LEFT: intro + CTA -->
+    <div class="community__left">
+      <div class="community__intro">
+        <p class="community__eyebrow">
+          MÁS CLARIDAD. MÁS CONTROL. MÁS FUTURO.
+        </p>
+
+        <h2 class="community__title">
+          FORMA PARTE DEL MODELO GYM24.ES
+        </h2>
+
+        <p class="community__subtitle">
+          Una propuesta pensada para propietarios, inversores y emprendedores
+          que buscan un gimnasio 24/7 con estructura clara y visión de crecimiento.
+        </p>
+      </div>
+
+      <div class="community__actions">
+        <a href="#contacto" class="community__btn community__btn--primary">
+          Solicitar información
+        </a>
+
+        <a href="#proceso" class="community__btn community__btn--secondary">
+          Estudiar mi local
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: 2x2 stats -->
+    <div class="community__stats">
+      <article class="community-stat">
+        <div class="community-stat__value">Desde 45.000 €</div>
+        <div class="community-stat__label">Inversión orientativa base</div>
+      </article>
+
+      <article class="community-stat">
+        <div class="community-stat__value">24/7</div>
+        <div class="community-stat__label">Sistema de acceso automatizado</div>
+      </article>
+
+      <article class="community-stat">
+        <div class="community-stat__value">50 €/mes</div>
+        <div class="community-stat__label">Cuota media orientativa</div>
+      </article>
+
+      <article class="community-stat">
+        <div class="community-stat__value">200-500</div>
+        <div class="community-stat__label">Socios en proyección comercial</div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<section class="spacer spacer-income">
+  <div class="spacer-bg"></div>
+
+  <div class="spacer-content">
+    <p class="spacer-small">
+      MODELO DE INGRESOS RECURRENTES
+    </p>
+
+    <h2 class="spacer-title">
+      Un gimnasio que genera ingresos<br>
+      todos los meses.
+    </h2>
+
+    <p class="spacer-text">
+      Cuotas mensuales, automatización y una estructura diseñada
+      para escalar con el número de socios.
+    </p>
+  </div>
+</section>
+
+<section class="section section-safety" id="seguridad">
+  <div class="container safety">
+
+    <div class="safety__grid">
+
+    <div class="safety__content">
+      <p class="safety__eyebrow">
+        UN ENTORNO MODERNO Y SEGURO
+      </p>
+
+      <h2 class="safety__title">
+        UN MODELO AUTÓNOMO, CONTROLADO Y ESCALABLE
+      </h2>
+
+      <p class="safety__subtitle">
+        Gym24.es combina automatización, control de accesos y equipamiento moderno
+        para crear un gimnasio 24/7 preparado para operar con eficiencia
+        y menor dependencia de personal.
+      </p>
+
+      <ul class="safety__list">
+        <li>Control de accesos automatizado 24/7</li>
+        <li>Supervisión y sistemas de seguridad integrados</li>
+        <li>Equipamiento moderno y optimizado</li>
+        <li>Estructura diseñada para reducir costes operativos</li>
+      </ul>
+
+      <a href="#contacto" class="safety__cta">
+        Solicitar información
+      </a>
+    </div>
+
+    <div class="safety__photo">
+      <img src="img/jose.png" alt="Asesor gym24.es">
+    </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="ticker-spacer" aria-label="Mensaje destacado">
+  <div class="ticker-spacer__track">
+    <span>FRANQUICIA 24/7</span>
+    <span>INVERSIÓN INTELIGENTE</span>
+    <span>MODELO AUTOMATIZADO</span>
+    <span>CONTROL DE ACCESOS</span>
+    <span>NEGOCIO ESCALABLE</span>
+    <span>RENTABILIDAD POTENCIAL</span>
+
+    <span>FRANQUICIA 24/7</span>
+    <span>INVERSIÓN INTELIGENTE</span>
+    <span>MODELO AUTOMATIZADO</span>
+    <span>CONTROL DE ACCESOS</span>
+    <span>NEGOCIO ESCALABLE</span>
+    <span>RENTABILIDAD POTENCIAL</span>
+  </div>
+</section>
+
+<section class="section section-contact" id="contacto">
+  <div class="container contact">
+    <h2 class="contact__title">Solicita Informaci&oacute;n</h2>
+    <p id="formSuccess" class="form-success" hidden>Gracias. Tu solicitud se envi&oacute; correctamente.</p>
+
+    <form
+      id="leadForm"
+      class="form"
+      action="https://formsubmit.co/municio1925@gmail.com"
+      method="POST"
+    >
+      <input type="text" name="name" placeholder="Nombre" required>
+
+      <input type="tel" name="phone" placeholder="Tel&eacute;fono" required>
+
+      <input type="email" name="email" placeholder="Email" required>
+
+      <select name="metros" required>
+        <option value="">Metros del local</option>
+        <option>50 - 100 m&sup2;</option>
+        <option>100 - 200 m&sup2;</option>
+        <option>200 - 400 m&sup2;</option>
+        <option>400 m&sup2; +</option>
+      </select>
+
+      <select name="budget" required>
+        <option value="">Inversi&oacute;n estimada</option>
+        <option>30.000 - 50.000 EUR</option>
+        <option>50.000 - 80.000 EUR</option>
+        <option>80.000 EUR +</option>
+      </select>
+
+      <textarea name="message" placeholder="Comentario (opcional)"></textarea>
+
+      <input type="hidden" name="_subject" value="Nueva solicitud desde gym24.es">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" id="formNext" value="">
+
+      <button type="submit" class="form-submit">
+        Enviar solicitud
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+
+  <div class="footer__inner">
+
+    <!-- LEFT -->
+    <div class="footer__left">
+      <img src="img/lg1.png" alt="gym24.es" class="footer__logo">
+
+      <p class="footer__text">
+        Gimnasios inteligentes 24/7.<br>
+        Modelo optimizado para inversión y crecimiento.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer__right">
+
+      <div class="footer__cta">
+        <p class="footer__cta-text">
+          Solicita información y estudia tu proyecto
+        </p>
+
+        <a href="#contacto" class="footer__btn">
+          Solicitar información
+        </a>
+      </div>
+
+      <div class="footer__contacts">
+        <span>Granada</span>
+        <span>España</span>
+        <a href="tel:+346664700350">+34 666 470 0350</a>
+        <a href="mailto:municio1925@gmail.com">municio1925@gmail.com</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- bottom -->
+  <div class="footer__bottom">
+    <span>© gym24.es</span>
+    <span>Todos los derechos reservados</span>
+    <a href="#" data-cookie-settings class="footer__cookie-link">Política de cookies</a>
+    <span class="footer__dev">
+      Desarrollado por
+      <a href="https://3dna.es" target="_blank" rel="noopener noreferrer" aria-label="3DNA.es">
+        <img src="img/lg%20(1).png" alt="3DNA.es" class="footer__dev-logo" />
+      </a>
+      · 2026
+    </span>
+  </div>
+
+</footer>
+
+  <!-- ===================== COOKIE BANNER ===================== -->
+  <div id="cookieBanner" class="cookie-banner" hidden>
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <strong>Usamos cookies</strong>
+        <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia, analizar el tráfico y personalizar el contenido. Puedes aceptarlas todas, rechazarlas o configurar tus preferencias.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button id="cookieAcceptAll" class="cookie-btn cookie-btn--primary">Aceptar todo</button>
+        <button id="cookieRejectAll" class="cookie-btn cookie-btn--secondary">Rechazar todo</button>
+        <button id="cookieConfigure" class="cookie-btn cookie-btn--ghost">Configurar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== COOKIE MODAL ===================== -->
+  <div id="cookieModal" class="cookie-modal" hidden role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
+    <div class="cookie-modal__overlay" id="cookieModalOverlay"></div>
+    <div class="cookie-modal__box">
+      <div class="cookie-modal__header">
+        <h2 class="cookie-modal__title" id="cookieModalTitle">Configuración de cookies</h2>
+        <button class="cookie-modal__close" id="cookieModalClose" aria-label="Cerrar">&#x2715;</button>
+      </div>
+      <div class="cookie-modal__body">
+        <p class="cookie-modal__intro">Puedes activar o desactivar cada categoría. Las cookies esenciales no pueden desactivarse porque son necesarias para el funcionamiento del sitio.</p>
+
+        <!-- Esenciales -->
+        <div class="cookie-category">
+          <div class="cookie-category__header">
+            <div>
+              <strong>Cookies esenciales</strong>
+              <p>Necesarias para el correcto funcionamiento del sitio. No recopilan datos personales identificables.</p>
+            </div>
+            <label class="cookie-toggle cookie-toggle--disabled" aria-label="Siempre activas">
+              <input type="checkbox" checked disabled>
+              <span class="cookie-toggle__track"></span>
+              <span class="cookie-toggle__label">Siempre activas</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Analíticas -->
+        <div class="cookie-category">
+          <div class="cookie-category__header">
+            <div>
+              <strong>Cookies analíticas</strong>
+              <p>Nos permiten medir el tráfico y analizar cómo los usuarios interactúan con el sitio (p. ej. Google Analytics).</p>
+            </div>
+            <label class="cookie-toggle" aria-label="Cookies analíticas">
+              <input type="checkbox" id="cookieAnalytics">
+              <span class="cookie-toggle__track"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="cookie-category">
+          <div class="cookie-category__header">
+            <div>
+              <strong>Cookies de marketing</strong>
+              <p>Se utilizan para mostrarte publicidad relevante y medir la efectividad de las campañas publicitarias.</p>
+            </div>
+            <label class="cookie-toggle" aria-label="Cookies de marketing">
+              <input type="checkbox" id="cookieMarketing">
+              <span class="cookie-toggle__track"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-modal__footer">
+        <button id="cookieSavePrefs" class="cookie-btn cookie-btn--primary">Guardar preferencias</button>
+        <button id="cookieAcceptAllModal" class="cookie-btn cookie-btn--secondary">Aceptar todo</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
