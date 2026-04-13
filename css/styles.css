@@ -251,7 +251,7 @@ a {
 .hero__inner {
   width: 100%;
   max-width: 620px;
-  margin-left: auto;
+  margin-left: 20%;
   margin-right: auto;
   text-align: left;
 }
@@ -376,7 +376,7 @@ a {
 
   .hero__inner {
     max-width: 640px;
-    margin-left: 0;
+    margin-left: 20%;
     margin-right: auto;
   }
 
@@ -396,6 +396,7 @@ a {
   .hero__inner {
     max-width: 1060px;
     padding: 0 24px;
+    margin-left: 20%;
   }
 }
 
@@ -456,6 +457,10 @@ a {
 
 .spacer-inner {
   max-width: 100%;
+}
+
+.spacer-inner .container {
+  overflow: hidden;
 }
 
 .reviews-marquee {
